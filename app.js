@@ -22,6 +22,7 @@ app.get('/', function (req, res) {
    res.render("landing");
 });
 
+// INDEX Route - Show all campgrounds
 app.get('/campgrounds', function (req, res) {
    // Get all campgrounds from DB
    Campground.find({}, function (err, campgrounds) {
@@ -35,12 +36,14 @@ app.get('/campgrounds', function (req, res) {
    });
 });
 
+// NEW - show form to create new campground
 app.get("/campgrounds/new", function (req, res) {
    res.render("new.ejs");
 });
 
+// CREATE Route - add new campground to database and display it
 app.post("/campgrounds", function (req, res) {
-   // Get data from form and add to campgrounds array above
+   // Get data from form and add to database
    var name = req.body.name;
    var image = req.body.image;
    
