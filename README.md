@@ -28,3 +28,12 @@ A web application dedicated to review campgrounds
    - Install and configure mongoose
    - Setup campground model for the database
    - Use the campground model to display campgrounds instead of routes
+   - Implemented INDEX, NEW, SHOW and CREATE routes for RESTFul Routing standards
+   - Cleared current database
+   - Added new description input when adding new campgrounds
+   - Modified current code to add description to code objects
+   - Added a 'More Info' button under each campgrounds which redirects to a different webpage with the description and a larger image
+   - Gave each campground in the database a unique id so it can easily be referenced
+
+# Current todo list
+- Style the show.ejs template 
