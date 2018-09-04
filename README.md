@@ -40,5 +40,10 @@ A web application dedicated to review campgrounds
    - Began refactoring app.js to separate any database models such as Campground
    - Adding seed file to pass some test data
 
+- Version 4 (04/09/18):
+   - Implemented a fully fledged comment model allowing user to post a comment that is stored on the database
+   - Implemented nested routes for comments. (e.g. /campgrounds/:id/comments/new)
+   - Implemented GET and POST routes for comment which renders a form to add a comment and then associates that comment with the selected campground respectively
+
 # Current todo list
 - Style the show.ejs template 
