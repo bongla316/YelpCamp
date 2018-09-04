@@ -5,18 +5,18 @@ var Comment = require("./models/comment");
 var data = [
    {
       name: "Cloud's Rest",
-      image: "https://pixabay.com/get/eb30b00d21f0053ed1584d05fb1d4e97e07ee3d21cac104496f5c87ba6efb0ba_340.jpg",
-      description: "Test 1: Blah blah blah"
+      image: "https://pixabay.com/get/e83cb30621f41c22d2524518b7444795ea76e5d004b0144293f0c97ba0efb1_340.jpg",
+      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
    },
    {
       name: "Meridian Campground",
-      image: "https://pixabay.com/get/e837b1072af4003ed1584d05fb1d4e97e07ee3d21cac104496f5c878a5e8b7b8_340.jpg",
-      description: "Test 2: Blah blah blah"
+      image: "https://pixabay.com/get/eb30b00d21f0053ed1584d05fb1d4e97e07ee3d21cac104496f6c17ca0eeb7ba_340.jpg",
+      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
    },
    {
       name: "Jotenheim Canyon",
-      image: "https://pixabay.com/get/e832b50f21f3023ed1584d05fb1d4e97e07ee3d21cac104496f5c871afe9bdbe_340.jpg",
-      description: "Test 3: Blah blah blah"
+      image: "https://pixabay.com/get/e832b50f21f3023ed1584d05fb1d4e97e07ee3d21cac104496f6c171a5ebbdbd_340.jpg",
+      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
    }
 ];
 
