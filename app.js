@@ -13,6 +13,8 @@ app.use(bodyParser.urlencoded({
    extended: true
 }));
 app.set("view engine", "ejs");
+app.use(express.static(__dirname + "/public"));
+
 seedDB();
 
 app.get('/', function (req, res) {
@@ -82,25 +84,27 @@ app.get("/campgrounds/:id", function (req, res) {
 
 app.get("/campgrounds/:id/comments/new", function (req, res) {
    // Find campground by id
-   Campground.findById(req.params.id, function(err, campground){
-      if(err) {
+   Campground.findById(req.params.id, function (err, campground) {
+      if (err) {
          console.log(err);
       } else {
-         res.render("comments/new", {campground: campground});
+         res.render("comments/new", {
+            campground: campground
+         });
       }
    });
 });
 
-app.post("/campgrounds/:id/comments", function(req, res){
+app.post("/campgrounds/:id/comments", function (req, res) {
    // Lookup campground using id
-   Campground.findById(req.params.id, function(err, campground){
-      if(err){
+   Campground.findById(req.params.id, function (err, campground) {
+      if (err) {
          console.log(err);
          res.redirect("/campground");
       } else {
          // Create new comment
-         Comment.create(req.body.comment, function(err, comment){
-            if(err) {
+         Comment.create(req.body.comment, function (err, comment) {
+            if (err) {
                console.log(err);
             } else {
                // Connect new comment to campground
@@ -112,7 +116,7 @@ app.post("/campgrounds/:id/comments", function(req, res){
          });
       }
    });
-   
+
 })
 
 app.listen('3000', function () {
