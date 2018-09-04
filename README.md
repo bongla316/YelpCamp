@@ -45,5 +45,14 @@ A web application dedicated to review campgrounds
    - Implemented nested routes for comments. (e.g. /campgrounds/:id/comments/new)
    - Implemented GET and POST routes for comment which renders a form to add a comment and then associates that comment with the selected campground respectively
 
+- Version 5 (04/09/18):
+   - Style the show.ejs template page to add a sidebar, padding, thumbnails etc
+   - Created a public directory which will serve the main.css stylesheet and any other stylesheets in the future
+   - Styled the show page for each campground with new images and longer descriptions
+   - Used bootstrap grid to achieve the layout
+
 # Current todo list
-- Style the show.ejs template 
+* Add authentication for users to create accounts
+* Associate accounts to comments and pictures uploaded etc
+* Add code to update and destroy data in the database when required
+* Further styling of the web page
