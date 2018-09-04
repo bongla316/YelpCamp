@@ -35,5 +35,10 @@ A web application dedicated to review campgrounds
    - Added a 'More Info' button under each campgrounds which redirects to a different webpage with the description and a larger image
    - Gave each campground in the database a unique id so it can easily be referenced
 
+- Version 3 (01/09/18):
+   - Added new branch for version 3 which will implement a comments section
+   - Began refactoring app.js to separate any database models such as Campground
+   - Adding seed file to pass some test data
+
 # Current todo list
 - Style the show.ejs template 
