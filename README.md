@@ -51,6 +51,9 @@ A web application dedicated to review campgrounds
    - Styled the show page for each campground with new images and longer descriptions
    - Used bootstrap grid to achieve the layout
 
+- Version 6 (12/09/18):
+   - Added passport.js for authentication and user accounts
+
 # Current todo list
 * Add authentication for users to create accounts
 * Associate accounts to comments and pictures uploaded etc
