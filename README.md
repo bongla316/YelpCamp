@@ -54,6 +54,15 @@ A web application dedicated to review campgrounds
 - Version 6 (12/09/18):
    - Added passport.js for authentication and user accounts
 
+- Version 7:
+   - Refactored the project to simplify app.js and moved routes to their own specific files in the routes directory
+
+- Version 8:
+   - Added user association to comments
+
+- Version 9:
+   - Added user association to newly created campgrounds
+
 # Current todo list
 * Add authentication for users to create accounts
 * Associate accounts to comments and pictures uploaded etc
