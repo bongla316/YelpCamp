@@ -69,6 +69,8 @@ A web application dedicated to review campgrounds
    - Created edit form in the /views/ directory
    - Added delete button and routes into show page for campgrounds (authentication to be added)
    - Added user authorization for edit and delete routes using custom middleware 
+   - Added edit, update and delete routes for comments with user authorization
+   - Refactored middleware to be included in its own directory for easier use and cleaner code
 
 # Current todo list
 * Add authentication for users to create accounts
