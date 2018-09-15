@@ -73,7 +73,6 @@ A web application dedicated to review campgrounds
    - Refactored middleware to be included in its own directory for easier use and cleaner code
 
 # Current todo list
-* Add authentication for users to create accounts
-* Associate accounts to comments and pictures uploaded etc
-* Add code to update and destroy data in the database when required
-* Further styling of the web page
+* Improve the user experience and styling
+* Implement functionality to add google maps location on campgrounds
+* Add and improve error handling to be more useful for the user
