@@ -63,6 +63,13 @@ A web application dedicated to review campgrounds
 - Version 9:
    - Added user association to newly created campgrounds
 
+- Version 10 (15/09/18):
+   - Added EDIT and UPDATE routes to campgrounds pages without authentication (yet)
+   - Added a button to the campgrounds show page to take you to the edit form
+   - Created edit form in the /views/ directory
+   - Added delete button and routes into show page for campgrounds (authentication to be added)
+   - Added user authorization for edit and delete routes using custom middleware 
+
 # Current todo list
 * Add authentication for users to create accounts
 * Associate accounts to comments and pictures uploaded etc
