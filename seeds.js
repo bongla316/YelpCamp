@@ -1,6 +1,7 @@
 var mongoose = require("mongoose");
 var Campground = require("./models/campground");
 var Comment = require("./models/comment");
+var User = require("./models/user");
 
 var data = [
    {
@@ -26,32 +27,47 @@ function seedDB(){
       if(err){
          console.log(err);
       }
-      console.log("Campground database cleared");
+      console.log("Campgrounds cleared from database");
       
       // Add random campgrounds
-      data.forEach(seed => {
-         Campground.create(seed, function(err, data){
-            if(err){
-               console.log(err);
-            } else {
-               console.log("Added a campground");
-               // Add a few comments
-               Comment.create(
-                  {
-                     text: "Awesome place...no wifi!",
-                     author: "Kratos"
-                  }, function(err, comment){
-                     if(err){
-                        console.log(err);
-                     } else {
-                        data.comments.push(comment);
-                        data.save();
-                        console.log("New comment created");
-                     }
-                  });
-            }
-         });
-      });
+      // data.forEach(seed => {
+      //    Campground.create(seed, function(err, data){
+      //       if(err){
+      //          console.log(err);
+      //       } else {
+      //          console.log("Added a campground");
+      //          // Add a few comments
+      //          Comment.create(
+      //             {
+      //                text: "Awesome place...no wifi!",
+      //                author: "Kratos"
+      //             }, function(err, comment){
+      //                if(err){
+      //                   console.log(err);
+      //                } else {
+      //                   data.comments.push(comment);
+      //                   data.save();
+      //                   console.log("New comment created");
+      //                }
+      //             });
+      //       }
+      //    });
+      // });
+   });
+   Comment.remove({}, function(err){
+      if(err) {
+         console.log(err);
+      }
+
+      console.log("Comments cleared from database");
+   });
+
+   User.remove({}, function(err){
+      if(err) {
+         console.log(err);
+      }
+
+      console.log("Users cleared from database");
    });
 }
 
