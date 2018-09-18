@@ -72,6 +72,12 @@ A web application dedicated to review campgrounds
    - Added edit, update and delete routes for comments with user authorization
    - Refactored middleware to be included in its own directory for easier use and cleaner code
 
+- Version 11:
+   - Updated error handling to make it more user friendly instead of using console.log()
+   - Installed and configured connect-flash
+   - Color coded error messages with bootstrap (Red = Error; Green = Success)
+   - Fixed some app breaking bugs
+
 # Current todo list
 * Improve the user experience and styling
 * Implement functionality to add google maps location on campgrounds
