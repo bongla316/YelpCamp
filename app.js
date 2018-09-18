@@ -5,6 +5,7 @@ var   express        = require("express"),
       passport       = require("passport"),
       LocalStrategy  = require("passport-local"),
       methodOverride = require("method-override"),
+      flash          = require("connect-flash"),
       Campground     = require("./models/campground"),
       Comment        = require("./models/comment"),
       User           = require("./models/user"),
@@ -29,6 +30,7 @@ app.use(bodyParser.urlencoded({
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
 app.use(methodOverride("_method"));
+app.use(flash());
 
 // seedDB();
 
@@ -48,7 +50,9 @@ passport.deserializeUser(User.deserializeUser());
 
 // Middleware for every route to check if a user is logged in (for header)
 app.use(function(req, res, next){
-   res.locals.currentUser = req.user;
+   res.locals.currentUser  = req.user;
+   res.locals.success      = req.flash("success");
+   res.locals.error        = req.flash("error");   
    next();
 });
 
