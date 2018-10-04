@@ -21,7 +21,7 @@ var   campgroundRoutes  = require("./routes/campgrounds"),
 // =============================================================================
 // Mongoose & General Config
 // =============================================================================
-mongoose.connect("mongodb://localhost:27017/yelp_camp_v10", {
+mongoose.connect("mongodb://localhost:27017/yelp_camp_v13", {
    useNewUrlParser: true
 });
 app.use(bodyParser.urlencoded({
