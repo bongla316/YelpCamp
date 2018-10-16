@@ -22,9 +22,9 @@ var   campgroundRoutes  = require("./routes/campgrounds"),
 // Mongoose & General Config
 // =============================================================================
 
-var urlDB = process.env.DATABASEURL || ""
+var urlDB = process.env.DATABASEURL || "mongodb://localhost:27017/yelp_camp_v13";
 
-mongoose.connect(process.env.DATABASEURL, {
+mongoose.connect(urlDB, {
    useNewUrlParser: true
 });
 
