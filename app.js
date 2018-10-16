@@ -21,11 +21,9 @@ var   campgroundRoutes  = require("./routes/campgrounds"),
 // =============================================================================
 // Mongoose & General Config
 // =============================================================================
-mongoose.connect("mongodb://captain:geraltofrivia1@ds123963.mlab.com:23963/yelpcampbongla316", {
+mongoose.connect(process.env.DATABASEURL, {
    useNewUrlParser: true
 });
-// mongodb://localhost:27017/yelp_camp_v13
-
 
 app.use(bodyParser.urlencoded({
    extended: true
@@ -34,8 +32,6 @@ app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
 app.use(methodOverride("_method"));
 app.use(flash());
-
-// seedDB();
 
 // =============================================================================
 // PASSPORT.JS CONFIGURATION
