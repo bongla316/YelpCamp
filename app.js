@@ -21,6 +21,9 @@ var   campgroundRoutes  = require("./routes/campgrounds"),
 // =============================================================================
 // Mongoose & General Config
 // =============================================================================
+
+var urlDB = process.env.DATABASEURL || ""
+
 mongoose.connect(process.env.DATABASEURL, {
    useNewUrlParser: true
 });
